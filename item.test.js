@@ -17,22 +17,23 @@ describe('Testes dos itens', () => {
 });
 
 /*
-const atualizarAgenda = require('./item.js');
+const AtualizarAgenda = require('./item.js');
 
 describe('Testes dos itens na atualização da agenda', () => {
   it('Deve ter 2 campos: nome e estado', () => {
-    const item = new Item('Ir para a academia','Concluída');
+    const novoItem = new AtualizarAgenda('Ir para a academia','Concluída');
 
-    expect(item.nome).toBe('Ir para a academia');
-    expect(item.valor).toBe('Concluída');
-   
+    expect(novoItem.tarefa).toBe('Ir para a academia');
+    expect(novoItem.estado).toBe('Concluída');
   });
 
-describe('Testes da atualização com falha', () => {
-  it('Deve retornar erro quando um ou amos itens não forem fornecidos', () => {
-    const primeiroItem = new atualizarAgenda('Alimentar gatos às 10');
+  describe('Testes da atualização com falha', () => {
+    it('Deve retornar erro quando um ou ambos os itens não forem fornecidos', () => {
+      const primeiroItem = new AtualizarAgenda('Alimentar gatos às 10');
 
-    expect(() => carrinho.finalizaCompra()).toThrowError('Tarefa e estado são de preenchimento obrigatório');
+      expect(() => primeiroItem.concluirAtualizacao()).toThrowError('Tarefa e estado são de preenchimento obrigatório');
+    });
   });
 });
+
 */
