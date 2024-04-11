@@ -1,18 +1,3 @@
-class Item {
-    constructor(nome, estado) {
-      this.nome = nome;
-      this.estado = estado;
-    
-    }
-  
-    somaTotalItens() {
-      return this.nome * this.estado;
-    }
-  }
-  
-  module.exports = Item;
-
-/*
 class atualizarAgenda {
   constructor(tarefa, estado) {
     this._tarefa = tarefa;
@@ -38,6 +23,4 @@ class atualizarAgenda {
 }
 
 module.exports = atualizarAgenda;
-
-*/
   
