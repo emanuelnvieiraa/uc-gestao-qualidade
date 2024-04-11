@@ -29,7 +29,7 @@ class atualizarAgenda {
   
   concluirAtualizacao() {
   if (!this._tarefa || !this._estado) {
-    throw new Error('Tarefa e estado são obrigatórios');
+    throw new Error('Tarefa e estado são de preenchimento obrigatório');
   } else {
     return { tarefa: this._tarefa, estado: this._estado };
   }
