@@ -36,5 +36,5 @@ let userId;
     expect(response.body.user.background).toBe("evertonX.jpg");
     userId = response.body.user.id;
   });
-});
+})
 

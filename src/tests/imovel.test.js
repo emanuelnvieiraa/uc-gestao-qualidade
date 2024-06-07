@@ -9,4 +9,5 @@ describe('Testes imovel', () => {
     expect(response.status).toBe(200);
     expect(Array.isArray(response.body.results)).toBe(true);
   });
-});
+})
+
