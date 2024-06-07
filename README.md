@@ -1,9 +1,9 @@
 <h1 align="center"> API Anúncio de Imóveis </h1>
 
-<h2 align="justify"> Projeto desenvolvido para a UC Sistemas Distribuídos e Mobile do 3º semestre do curso Análise e Desenvolvimento de Sistemas da UNIFG. </h2>
+<h2 align="justify"> Projeto desenvolvido para a UC Gestão e Qualidade de Software do 4º semestre do curso Análise e Desenvolvimento de Sistemas da UNIFG. </h2>
 
 <h2 align="center"> Descrição do Projeto </h2>
-<p align="justify"> Projeto de desenvolvimento de uma API de Anúncio de Imóveis, que faz uso das tecnologias Node.js, React, Express.js, MongoDB e Swagger, com um sistema CRUD (Create, Read, Update, Delete) com autenticação e autorização, paginação e busca.</p>
+<p align="justify"> Projeto de desenvolvimento de uma API de Anúncio de Imóveis, que faz uso das tecnologias Node.js, Express.js, MongoDB, Swagger, Jest e Supertest, com um sistema CRUD (Create, Read, Update, Delete) com autenticação e autorização, paginação e busca.</p>
 <p align="justify">Este sistema foi pensado para que os clientes proprietários de imóveis possam postar anúncios para os fins de venda e aluguel, esses anúncios ficarão disponíveis para visualização e busca mesmo por quem não for registrado no sistema, os usuários poderão buscar imóveis por cidade e havendo o interesse poderão contatar o proprietário por meio dos contatos deixados no anúncio. Caso o imóvel já tenha sido alugado ou vendido, apenas o autor original do anúncio poderá excluí-lo ou editar o campo em que é indicada a atual disponibilidade do imóvel.</p>
 
 <h2 align="center">Detalhamento da Utilização do Sistema</h2>
@@ -32,41 +32,3 @@
 |Deletar Um Anúncio|Sim|
 |Anúncios por Usuário|Sim|
 |Editar Anúncio|Sim|
-
-<h2 align="center">Requisitos do Projeto</h2>
-
-### Entidades com Relacionamento
-
-- [ ] Deve haver pelo menos duas entidades com um relacionamento claro entre elas (por exemplo, Livros e Autores, Produtos e Categorias, Cursos e Instrutores, etc.).
-
-- [ ] Implementar operações CRUD para ambas as entidades.
-      
-:pushpin: Operações CRUD implementadas para a entidade Imóvel, para Usuário-proprietário faltou delete
-
-### Autenticação e Autorização:
-
-- [X] Implementação das rotas de registro do usuário, login e logout para autenticação.
-      
-:pushpin: Não há rota para logout
-
-- [ ] Dois perfis de usuários: Administrador e Usuário comum.
-- [ ] O administrador pode listar, editar e excluir usuários.
-- [ ] Implementar operações CRUD de usuários.
-
-:pushpin: Há as funções criar, editar e ler usuários, mas a função deletar usuário não foi implementada
-
-- [X] Criptografar as senhas dos usuários.
-
-### Funcionalidades:
-
-- [X] Paginação e busca nas listagens de entidades.
-- [X] Autenticação JWT para segurança das rotas.
-- [ ] Middleware para controle de acesso baseado no perfil do usuário.
-      
-:pushpin: Foi criado middleware para validar o autor do anúncio para fins de update 
-
-
-
-
-
-
