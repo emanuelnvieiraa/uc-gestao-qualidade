@@ -50,7 +50,7 @@ const findAll = async (req, res) => {
             return res.status(400).send({ message: "Não existe usuários registrados" })
         }
 
-        res.status(200).send(users);
+        res.send(users)
     } catch (err) {
         res.status(500).send({ message: err.message })
     }
