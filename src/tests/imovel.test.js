@@ -3,6 +3,8 @@ import app from '../index.js';
 
 const request = supertest(app);
 
+//Teste listar imóveis
+
 describe('Testes imovel', () => {
   test('listar todos os imoveis', async () => {
     const response = await request.get('/imovel');

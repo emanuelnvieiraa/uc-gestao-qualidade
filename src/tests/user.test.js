@@ -4,6 +4,8 @@ import { getMaxListeners } from 'supertest/lib/test.js';
 
 const request = supertest(app);
 
+//Testes listar users e criar user
+
 describe('Testes user', () => {
 
 let userId;
