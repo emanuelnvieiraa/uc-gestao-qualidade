@@ -41,5 +41,21 @@ let userId;
     expect(response.body.user.background).toBe("evertonX.jpg");
     userId = response.body.user.id;
   });
+  
+  test('Criar um novo usuário dados já cadastrados', async () => {
+    const response = await request
+      .post('/user')
+      .send({
+        name: 'evertonX',
+        username: 'evertonX', // username existenet
+        email: `evertonX@gmail.com`, // email existente
+        password: "evertonX",
+        avatar: "evertonX.jpg",
+        background: "evertonX.jpg"
+      });
+
+    expect(response.status).toBe(400);
+    expect(response.body.message).toBe('Erro ao criar usuário');
+  });
 })
 
