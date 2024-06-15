@@ -1,5 +1,5 @@
 import supertest from 'supertest';
-import app from '../index.js';
+import app from '../../index.js';
 import { getMaxListeners } from 'supertest/lib/test.js';
 
 const request = supertest(app);
@@ -9,6 +9,14 @@ const request = supertest(app);
 describe('Testes user', () => {
 
 let userId;
+
+afterEach(async () => {
+  // Remove o usuário criado após cada teste
+  if (userId) {
+    await request.delete(`/user/${userId}`);
+    userId = null; // Resetar userId para garantir que não haja interferência em outros testes
+  }
+});
 
   test('Listar todos os usuários', async () => {
     const response = await request.get('/user');
@@ -72,4 +80,3 @@ let userId;
     expect(response.body.message).toBe('Por favor, preencha todos os campos!');
   });
 })
-

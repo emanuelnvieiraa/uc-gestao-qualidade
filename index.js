@@ -5,12 +5,12 @@ const userRoute = require("./src/routes/user.route")*/
 
 import express from 'express';
 import cors from 'cors';
-import connectDatabase from "./database/db.js";
+import connectDatabase from "./src/database/db.js";
 import dotenv from "dotenv";
 
-import userRoute from "./routes/user.route.js";
-import authRoute from "./routes/auth.route.js";
-import imovelRoute from "./routes/imovel.route.js";
+import userRoute from "./src/routes/user.route.js";
+import authRoute from "./src/routes/auth.route.js";
+import imovelRoute from "./src/routes/imovel.route.js";
 //import swaggerRoute from "./routes/swagger.route.js";
 
 dotenv.config();
@@ -26,4 +26,5 @@ app.use("/imovel", imovelRoute);
 //app.use("/doc", swaggerRoute);
 
 //app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
-module.exports = app;
+//module.exports = app;
+export default app;

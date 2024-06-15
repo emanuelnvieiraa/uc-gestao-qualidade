@@ -1,5 +1,5 @@
 import supertest from 'supertest';
-import app from '../index.js';
+import app from '../../index.js';
 
 const request = supertest(app);
 
@@ -33,4 +33,3 @@ describe('Testes imovel', () => {
 })
 
 })
-
