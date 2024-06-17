@@ -28,25 +28,34 @@ export const create = async (req, res) => {
                 message: "Por favor, preencha todos os campos para concluir!",
             })
         }
+        
+        const imovel = await createService(req.body).catch((err) => console.log(err.message));
 
-        await createService({
-            cidade,
-            bairro,
-            rua,
-            numero,
-            tipoDeImovel,
-            tipoDeNegocio,
-            atualDisponibilidade,
-            telefoneContato, 
-            imagemImovel,
-            user: req.userId
-        })
-     res.sendStatus(201)
-    } catch (err) {
-        res.status(500).send({ message: err.message })
-    }
-
-}
+        if (!imovel) {
+          return res.status(400).send({ 
+            message: "Erro ao criar imóvel" 
+          });
+        }
+    
+        return res.status(201).send({
+          message: "Imóvel criado com sucesso",
+          imovel: {
+            id: imovel._id,
+            cidade, 
+            bairro, 
+            rua, 
+            numero, 
+            tipoDeImovel, 
+            tipoDeNegocio, 
+            atualDisponibilidade, 
+            telefoneContato,
+            imagemImovel
+          }
+        });
+      } catch (err) {
+        return res.status(500).send({ message: err.message });
+      }
+};
 
 export const findAll = async (req, res) => {
     //PAGINAÇÃO

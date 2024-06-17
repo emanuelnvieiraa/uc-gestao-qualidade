@@ -6,6 +6,6 @@ const loginService = (email) =>
 
     //token para guardar a sessão do usuário e qual usuário no frontend
     const generateToken = (id) => 
-        jwt.sign({id: id}, process.env.SECRET_JWT, {expiresIn: 86480})
+        jwt.sign({id: id}, process.env.SECRET_JWT, {expiresIn: 886480})
 
 export { loginService, generateToken }

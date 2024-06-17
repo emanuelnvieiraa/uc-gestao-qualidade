@@ -1,128 +1,282 @@
 {
     "clientName": "Thunder Client",
-    "collectionName": "UCQUALIDADE",
-    "collectionId": "97587b84-99f5-48f3-a6af-1e288cd78129",
-    "dateExported": "2024-05-17T02:08:25.426Z",
+    "collectionName": "API_CADIMOVEIS",
+    "collectionId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+    "dateExported": "2024-06-16T23:42:18.959Z",
     "version": "1.2",
     "folders": [],
     "requests": [
         {
-            "_id": "0b36f77e-fe58-49ed-83d2-21e958335f33",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "cd654e0d-93c2-4254-b952-b998359f9733",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "DELETE IMOVEL",
-            "url": "localhost:3000/imovel/6646bae5aa3bdaa34b1cc948",
-            "method": "DELETE",
-            "sortNum": 625,
-            "created": "2024-05-17T02:06:45.020Z",
-            "modified": "2024-05-17T02:08:21.057Z",
-            "headers": [
-                {
-                    "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDZiOTE1MTRmN2FjMDQzMzg5ZjNiYSIsImlhdCI6MTcxNTkxMTA0MiwiZXhwIjoxNzE1OTk3NTIyfQ.7HY6yQ46MS0tCgoZCAtkjrisKvEg5P4Q2XM8zcn1oXg"
-                }
-            ],
+            "name": "POST-CRIAR USER",
+            "url": "http://localhost:3000/user/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-01T23:16:23.789Z",
+            "modified": "2023-12-11T00:41:43.923Z",
+            "headers": [],
+            "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n      \"id\": \"6646bae5aa3bdaa34b1cc948\",\n      \"cidade\": \"Caetite\",\n      \"bairro\": \"brasilia\",\n      \"rua\": \"Rio Grande do Norte\",\n      \"numero\": 99,\n      \"tipoDeImovel\": \"Sobrado\",\n      \"tipoDeNegocio\": \"Venda\",\n      \"atualDisponibilidade\": \"Disponível\",\n      \"telefoneContato\": 77992121051,\n      \"imagemImovel\": \"https://pt.m.wikipedia.org/wiki/Ficheiro:Casa_Amarela.jpg\"\n      \n    }",
+                "raw": "{\n  \"name\": \"123\",\n  \"username\": \"123\",\n  \"email\": \"123@gmail.com\",\n  \"password\": \"123\",\n  \"avatar\": \"https://avatars.githubusercontent.com/u/116851307?v=4\",\n  \"background\": \"https://avatars.githubusercontent.com/u/116851307?v=4\"\n}",
                 "form": []
-            }
+            },
+            "tests": []
         },
         {
-            "_id": "bb36c060-56ed-4a27-80a5-1fc3d6af9bbc",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "6d579823-8d5f-4645-b4d5-e9921f18bccd",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "UPDATE IMOVEL",
-            "url": "localhost:3000/imovel/6646bae5aa3bdaa34b1cc948",
+            "name": "PATCH-EDITAR CONTEÚDO",
+            "url": "http://localhost:3000/user/6573aaaf572efdf4a10cde8d",
             "method": "PATCH",
-            "sortNum": 1250,
-            "created": "2024-05-17T02:04:25.263Z",
-            "modified": "2024-05-17T02:07:52.240Z",
+            "sortNum": 20000,
+            "created": "2023-12-01T23:16:38.011Z",
+            "modified": "2023-12-13T01:55:30.009Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDZiOTE1MTRmN2FjMDQzMzg5ZjNiYSIsImlhdCI6MTcxNTkxMTA0MiwiZXhwIjoxNzE1OTk3NTIyfQ.7HY6yQ46MS0tCgoZCAtkjrisKvEg5P4Q2XM8zcn1oXg"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmE3NGVmOGE1YjI0OGY2YTA0ZGU3NSIsImlhdCI6MTcwMTU3NzI3MywiZXhwIjoxNzAxNjYzNzUzfQ.VmxX_aZdXn111Zl3vVzyNDsCzO57b-A_4hDJtOULAHk"
                 }
             ],
+            "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n      \"id\": \"6646bae5aa3bdaa34b1cc948\",\n      \"cidade\": \"Caetite\",\n      \"bairro\": \"brasilia\",\n      \"rua\": \"Rio Grande do Norte\",\n      \"numero\": 99,\n      \"tipoDeImovel\": \"Sobrado\",\n      \"tipoDeNegocio\": \"Venda\",\n      \"atualDisponibilidade\": \"Disponível\",\n      \"telefoneContato\": 77992121051,\n      \"imagemImovel\": \"https://pt.m.wikipedia.org/wiki/Ficheiro:Casa_Amarela.jpg\"\n      \n    }",
+                "raw": "{\n  \"imagemImovel\": \"https://upload.wikimedia.org/wikipedia/commons/a/ab/Casa_Amarela.jpg\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cb1afb55-329a-426c-aa38-a01c7ed8af82",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "GET-VER USER POR ID",
+            "url": "http://localhost:3000/user/6573aaaf572efdf4a10cde8d",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-01T23:16:47.201Z",
+            "modified": "2023-12-10T17:58:01.013Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzNhYWFmNTcyZWZkZjRhMTBjZGU4ZCIsImlhdCI6MTcwMjIzMTAwOCwiZXhwIjoxNzAyMzE3NDg4fQ.ssdp99flOo6ptt-f3zLMoa4O39cP3dalTvPS5maM4H8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "937c9b99-f3a7-4f71-984b-4ec2d93cb0a9",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "GET-VER USER",
+            "url": "http://localhost:3000/user/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-12-01T23:16:54.156Z",
+            "modified": "2023-12-03T04:42:54.972Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmE3NGVmOGE1YjI0OGY2YTA0ZGU3NSIsImlhdCI6MTcwMTU3NzI3MywiZXhwIjoxNzAxNjYzNzUzfQ.VmxX_aZdXn111Zl3vVzyNDsCzO57b-A_4hDJtOULAHk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9266080-ca75-4115-8316-92e33349028c",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "POST-AUTH LOGIN OK TOKEN",
+            "url": "http://localhost:3000/auth/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-12-01T23:18:28.287Z",
+            "modified": "2024-05-02T21:46:16.514Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ucqualidade@gmail.com\",\n  \"password\": \"ucqualidade\"\n\n}",
                 "form": []
             }
         },
         {
-            "_id": "ed5d812f-8953-4cbb-9559-70f399114ded",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "e15d19d5-a851-4bca-ab7e-3b571f35fa73",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "GET IMOVEIS",
-            "url": "localhost:3000/imovel",
-            "method": "GET",
-            "sortNum": 2500,
-            "created": "2024-05-17T02:03:46.629Z",
-            "modified": "2024-05-17T02:07:19.942Z",
+            "name": "POST-IMOVEL",
+            "url": "http://localhost:3000/imovel",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-12-02T04:44:48.647Z",
+            "modified": "2024-05-02T21:47:37.367Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDZiOTE1MTRmN2FjMDQzMzg5ZjNiYSIsImlhdCI6MTcxNTkxMTA0MiwiZXhwIjoxNzE1OTk3NTIyfQ.7HY6yQ46MS0tCgoZCAtkjrisKvEg5P4Q2XM8zcn1oXg"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzQwOTM3MzE4ZjIyZGMxMGIyM2E1ZCIsImlhdCI6MTcxNDY4NjM3NiwiZXhwIjoxNzE0NzcyODU2fQ.pE9dqByDcz77ra4eqfC7WnAmOs9P71eS4Nsf2TQ8_rA"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "            {\n            \"cidade\": \"Guanambi\",\n            \"bairro\": \"Aerporto Velho\",\n            \"rua\": \"Avenida Messias Pereira Donato\",\n            \"numero\": \"99\",\n            \"tipoDeImovel\": \"Casa\",\n            \"tipoDeNegocio\": \"Venda\",\n            \"atualDisponibilidade\": \"Disponível\",\n            \"telefoneContato\": \"779854578445452412\",\n            \"imagemImovel\": \"https://pt.m.wikipedia.org/wiki/Ficheiro:Casa_Amarela.jpg\"\n            }",
+                "form": []
+            }
+        },
+        {
+            "_id": "26ecfe35-714f-47e0-90cf-34fbcc9d3292",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "GET-VER IMÓVEIS",
+            "url": "http://localhost:3000/imovel",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-12-02T05:08:50.198Z",
+            "modified": "2024-05-02T21:48:33.037Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzQwOTM3MzE4ZjIyZGMxMGIyM2E1ZCIsImlhdCI6MTcxNDY4NjM3NiwiZXhwIjoxNzE0NzcyODU2fQ.pE9dqByDcz77ra4eqfC7WnAmOs9P71eS4Nsf2TQ8_rA"
                 }
             ]
         },
         {
-            "_id": "d3f572ad-72ec-4b2b-b094-bbcd690e387c",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "16e01cd3-52c4-4cdf-a123-0e5aad58b2c9",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "POST IMOVEL",
-            "url": "localhost:3000/imovel",
-            "method": "POST",
-            "sortNum": 5000,
-            "created": "2024-05-17T01:57:42.538Z",
-            "modified": "2024-05-17T02:03:18.021Z",
+            "name": "GET-PAGINACAO",
+            "url": "http://localhost:3000/imovel?limit=11",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-12-02T20:55:11.104Z",
+            "modified": "2023-12-03T05:29:59.104Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDZiOTE1MTRmN2FjMDQzMzg5ZjNiYSIsImlhdCI6MTcxNTkxMTA0MiwiZXhwIjoxNzE1OTk3NTIyfQ.7HY6yQ46MS0tCgoZCAtkjrisKvEg5P4Q2XM8zcn1oXg"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmMwMmE3ZTVhNGM2YjVjNzY5ODhiNCIsImlhdCI6MTcwMTU4MTAzNiwiZXhwIjoxNzAxNjY3NTE2fQ.JKSCIWb-2B1dcij3dcy9KAPYVGNe89LGlnKMYqO9YMI"
+                }
+            ],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "11",
+                    "isPath": false
                 }
             ],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"cidade\": \"Guanambi\",\r\n  \"bairro\": \"brasilia\",\r\n  \"rua\": \"Rio Grande do Norte\",\r\n  \"numero\": \"99\",\r\n  \"tipoDeImovel\": \"Sobrado\",\r\n  \"tipoDeNegocio\": \"Venda\",\r\n  \"atualDisponibilidade\": \"Disponível\",\r\n  \"telefoneContato\": \"77992121051\",\r\n  \"imagemImovel\": \"https://pt.m.wikipedia.org/wiki/Ficheiro:Casa_Amarela.jpg\"\r\n}",
+                "raw": "{\n            \"cidade\": \"Marcio Teixeira\",\n            \"bairro\": \"Antigo Horizonte\",\n            \"rua\": \"Rua Oliveiras\",\n            \"numero\": \"56\",\n            \"tipoDeImovel\": \"apartamento\",\n            \"tipoDeNegocio\": \"aluguel\",\n            \"atualDisponibilidade\": \"indisponível\",\n            \"telefoneContato\": \"77985652412\"\n            }",
                 "form": []
-            }
+            },
+            "tests": []
         },
         {
-            "_id": "0c188f94-8d65-49a4-a682-a45dfa60670d",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "94c05f03-1f71-4961-a643-c45c84b712d7",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "POST USUÁRIO",
-            "url": "localhost:3000/user/",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-05-17T01:55:14.456Z",
-            "modified": "2024-05-17T01:55:34.130Z",
+            "name": "GET-BUSCA POR CIDADE",
+            "url": "http://localhost:3000/imovel/search?cidade=Guanambi",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-12-03T03:43:48.438Z",
+            "modified": "2023-12-10T17:39:10.173Z",
             "headers": [],
-            "body": {
-                "type": "json",
-                "raw": "{\r\n  \"name\": \"emanuel\",\r\n  \"username\": \"manu\",\r\n  \"email\": \"emanuel@gmail.com\",\r\n  \"password\": \"123\",\r\n  \"avatar\": \"https://avatars.githubusercontent.com/u/116851307?v=4\",\r\n  \"background\": \"https://avatars.githubusercontent.com/u/116851307?v=4\"\r\n}",
-                "form": []
-            }
+            "params": [
+                {
+                    "name": "cidade",
+                    "value": "Guanambi",
+                    "isPath": false
+                }
+            ],
+            "tests": []
         },
         {
-            "_id": "a0008a81-70ee-4dbd-8b40-ee9622ec41ee",
-            "colId": "97587b84-99f5-48f3-a6af-1e288cd78129",
+            "_id": "64a8b9a5-6496-49ed-920d-bf33e03c3f3b",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
             "containerId": "",
-            "name": "LOGIN COM TOKEN",
-            "url": "localhost:3000/auth/",
-            "method": "POST",
-            "sortNum": 20000,
-            "created": "2024-05-17T01:56:04.496Z",
-            "modified": "2024-05-17T01:56:54.819Z",
-            "headers": [],
+            "name": "GET-BUSCAR POR CIDADE",
+            "url": "http://localhost:3000/imovel/6575fceba864a20c94302621",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-12-03T05:49:39.926Z",
+            "modified": "2023-12-10T18:05:48.412Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzNhYWFmNTcyZWZkZjRhMTBjZGU4ZCIsImlhdCI6MTcwMjIzMTA3NCwiZXhwIjoxNzAyMzE3NTU0fQ.C8A__R2MwobRzne8C5b5k_0-bZRFHyEVDAbbFz__gVk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0a004e76-ecb5-4081-98ea-58e3f4b179ae",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "GET-LISTAR IMOVEIS POR USER",
+            "url": "http://localhost:3000/imovel/byUser",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-12-03T19:18:27.418Z",
+            "modified": "2023-12-10T18:03:32.345Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzNhYWFmNTcyZWZkZjRhMTBjZGU4ZCIsImlhdCI6MTcwMjIzMTA3NCwiZXhwIjoxNzAyMzE3NTU0fQ.C8A__R2MwobRzne8C5b5k_0-bZRFHyEVDAbbFz__gVk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "09b389dc-4db2-4a41-b934-c3ad18c733f5",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "PATCH - ATUALIZAR CONTEÚDO PRÓPRIO DO USUÁRIO",
+            "url": "http://localhost:3000/imovel/656cd51cc4a616faa61c0015",
+            "method": "PATCH",
+            "sortNum": 140000,
+            "created": "2023-12-03T20:36:15.835Z",
+            "modified": "2023-12-03T20:40:02.509Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmMwMmE3ZTVhNGM2YjVjNzY5ODhiNCIsImlhdCI6MTcwMTU4MTAzNiwiZXhwIjoxNzAxNjY3NTE2fQ.JKSCIWb-2B1dcij3dcy9KAPYVGNe89LGlnKMYqO9YMI"
+                }
+            ],
+            "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"email\": \"emanuel@gmail.com\",\r\n  \"password\": \"123\"\r\n  \r\n}",
+                "raw": "{\n            \"cidade\": \"Caculé\",\n            \"bairro\": \"Rua São Sebastião\",\n            \"rua\": \"Rua 41\",\n            \"numero\": \"78\",\n            \"tipoDeImovel\": \"casa\",\n            \"tipoDeNegocio\": \"aluguel\",\n            \"atualDisponibilidade\": \"indisponível\",\n            \"telefoneContato\": \"779854542412\"\n            }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "024a69a8-dd33-442c-a27c-d83a0a735e11",
+            "colId": "c8ef0b1d-e7ac-48a3-8701-185ab00b6e1c",
+            "containerId": "",
+            "name": "DELETE-APAGAR IMÓVEL",
+            "url": "http://localhost:3000/imovel/663409f9318f22dc10b23a61",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-12-03T21:26:02.870Z",
+            "modified": "2024-05-02T21:49:33.100Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzQwOTM3MzE4ZjIyZGMxMGIyM2E1ZCIsImlhdCI6MTcxNDY4NjM3NiwiZXhwIjoxNzE0NzcyODU2fQ.pE9dqByDcz77ra4eqfC7WnAmOs9P71eS4Nsf2TQ8_rA"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "           {\n            \"cidade\": \"Caculé\",\n            \"bairro\": \"Rua São Sebastião\",\n            \"rua\": \"Rua 41\",\n            \"numero\": \"78\",\n            \"tipoDeImovel\": \"casa\",\n            \"tipoDeNegocio\": \"aluguel\",\n            \"atualDisponibilidade\": \"indisponível\",\n            \"telefoneContato\": \"779854542412\"\n            }",
                 "form": []
             }
         }
     ],
-    "ref": "GAlT9Qra6yMwUUrmBLoAiZ8QgT1419dJa7xlDU2oyf4CIHjNPWDZfIdvKtAZvSZR8n7Z47cHXTq4RoLwnYWKnA"
+    "ref": "w3lUOJC3JdGsZ4W2UOZHiCUPzV1iYZ-yOnuRLrZEm11uIr2ZS8HgVb-X9RfZ_FzGYxug02fntjPeyRxymITHkA"
 }
