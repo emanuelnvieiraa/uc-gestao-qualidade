@@ -25,8 +25,6 @@ app.use("/auth", authRoute);
 app.use("/imovel", imovelRoute);
 //app.use("/doc", swaggerRoute);
 
-if (process.env.NODE_ENV !== 'test') {
-    app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
-}
+//app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
 //module.exports = app;
 export default app;
