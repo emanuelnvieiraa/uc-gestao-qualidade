@@ -80,3 +80,10 @@ afterEach(async () => {
     expect(response.body.message).toBe('Por favor, preencha todos os campos!');
   });
 })
+
+const timer = setTimeout(() => {
+  // Lógica do timer
+}, 1000);
+
+// Chame .unref() para permitir que o processo saia mesmo se o timer estiver ativo
+timer.unref();
