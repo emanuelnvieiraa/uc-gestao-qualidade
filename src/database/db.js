@@ -4,7 +4,7 @@ const connectDatabase = () => {
     console.log("Estamos conectando o com banco de dados...")
 
     mongoose
-    .connect( process.env.MONGODB_URI ,
+    .connect( process.env.MONGODB_URL,
         /*{ //opção descontinuada
             useNewUrlParser: true,
             useUnifiedTopology: true
