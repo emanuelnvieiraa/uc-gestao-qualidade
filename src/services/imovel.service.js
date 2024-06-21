@@ -42,3 +42,48 @@ export const updateService = (
     imagemImovel }, { rawResult: true })
 
     export const eraseService = (id) => Imovel.findByIdAndDelete({ _id: id })
+
+test('Editar um imóvel existente', async () => {
+    const newImovel = {
+      cidade: 'Guanambi',
+      bairro: 'Aeroporto Velho',
+      rua: 'Rua 1',
+      numero: 123,
+      tipoDeImovel: 'Casa',
+      tipoDeNegocio: 'Aluguel',
+      atualDisponibilidade: 'Disponível',
+      telefoneContato: 74988252525,
+      imagemImovel: 'casa.jpg'
+    };
+
+    // Primeiro, criar um novo imóvel
+    const createResponse = await request
+      .post('/imovel')
+      .set('Authorization', `Bearer ${token}`)
+      .send(newImovel);
+
+    expect(createResponse.status).toBe(201);
+    const createdImovelId = createResponse.body.imovel.id;
+
+    const updatedImovel = {
+      cidade: 'Guanambi',
+      bairro: 'Aeroporto Novo',
+      rua: 'Rua 2',
+      numero: 456,
+      tipoDeImovel: 'Apartamento',
+      tipoDeNegocio: 'Venda',
+      atualDisponibilidade: 'Indisponível',
+      telefoneContato: 74988252526,
+      imagemImovel: 'apartamento.jpg'
+    };
+
+    // Atualizar o imóvel criado
+    const updateResponse = await request
+      .put(`/imovel/${createdImovelId}`)
+      .set('Authorization', `Bearer ${token}`)
+      .send(updatedImovel);
+
+    expect(updateResponse.status).toBe(200);
+    expect(updateResponse.body).toHaveProperty('message');
+    expect(updateResponse.body.message).toBe('Imóvel atualizado com sucesso!');
+  });
